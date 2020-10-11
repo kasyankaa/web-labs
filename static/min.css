@@ -1,0 +1,23 @@
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 {
+    color: black;
+    font-family: Gilroy;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 10px;
+    margin: 0 auto;
+}
+
+p {
+    color: #73738D;
+}
