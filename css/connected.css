@@ -1,0 +1,144 @@
+.connected {
+    display: flex;
+    justify-content: space-around;
+}
+
+.connected__rectangle {
+    width: 379px;
+    height: 253px;
+    background: #FFFFFF;
+    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    border-radius: 20.7917px;
+}
+
+.connected__profiles {
+    display: flex;
+    margin-left: -20px;
+}
+
+.connected__profile__info {
+    display: flex;
+    margin-right: 5px;
+}
+
+.connected__profile__info p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: rgba(34, 34, 34, 0.8)
+}
+
+.send__comtent__title {
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 16.6333px;
+    line-height: 20px;
+    color: #222222;
+}
+
+.people-on-the-list {
+    width: 97px;
+    height: 13px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: -10px;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.title__and__people {
+    margin-left: -20px;
+}
+
+.three__dots__image {
+    margin-right: -20px;
+}
+
+.connected__title__and__dots {
+    display: flex;
+    justify-content: space-around;
+}
+
+.connected__line {
+    width: 346.53px;
+    height: 0px;
+    opacity: 0.6;
+    border: 0.693056px solid #EAEDF3;
+    margin: auto;
+}
+
+.sending-to {
+    width: 61px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    color: rgba(34, 34, 34, 0.6);
+    margin-left: 25px;
+}
+
+.send-to__people {
+    display: flex;
+    margin-left: 15px;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .connected__rectangle {
+        margin: 35px auto;
+    }
+}
+
+.few__clicks {
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+.connected__text__rectangle {
+    width: 346px;
+    height: 82px;
+    background: #FBFBFD;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.connected__para {
+    width: 307px;
+    height: 59px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 180%;
+    color: rgba(115, 115, 141, 0.8);
+    margin-left: 10px;
+}
+
+.scrolling__bar {
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    margin-left: 485px;
+    margin-top: 169px;
+    background: #EFEFF1;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .connected > * {
+        margin: auto;
+        width: 100%;
+    }
+    .connected__text__rectangle, .connected__para{
+        width: 100%;
+        max-width: 307px;
+    }
+    .connected__rectangle {
+        margin-top: 3rem;
+        min-width: 250px;
+        max-width: 379px;
+    }
+
+    .few__clicks > .paragraph {
+        width: 100%;
+        margin-top: -1rem;
+    }
+}

@@ -1,0 +1,17 @@
+
+/* helpers */
+@import "./normalize.min.css";
+
+/* globals */
+@import "./globals.css";
+@import "./animation.css";
+
+/* sections */
+@import "./header.css";
+@import "./hero.css";
+@import "./follow-up.css";
+@import "./sync.css";
+@import "./green_circles.css";
+@import "./connected.css";
+@import "./trial.css";
+@import "./footer.css";

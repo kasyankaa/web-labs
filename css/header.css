@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header__nav ul {
+    display: flex;
+    width: 700px;
+    justify-content: flex-end;
+}
+
+.header__nav__item {
+    font-weight: 600;
+    font-size: 11px;
+    margin-right: 47px;
+}
+
+.header__button {
+    width: 120px;
+    height: 35px;
+    border: 2px solid #1943EF;
+    border-radius: 33.9597px;
+    background-color: white;
+    color: #1943EF;
+    animation: pulse 5s infinite;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: #b4c2fc;
+    }
+}
+
+.header__menu {
+    display: none;
+    cursor: pointer;
+    width: 28px;
+}
+
+.header__menu>img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 2560px) {
+    .paragraph,
+    .header__nav__item {
+        font-size: 1.5rem;
+    }
+    .title,
+    .hero__text__title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 903px) {
+    .header__button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: sticky;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: var(--background-color);
+        z-index: 10;
+    }
+    .header__button {
+        display: none;
+    }
+    .header__menu {
+        display: block;
+    }
+    .header__nav {
+        background-color: rgb(231, 231, 231);
+        position: fixed;
+        top: 52px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top left);
+        transition: clip-path 1s linear;
+    }
+    .header__nav.open {
+        clip-path: circle(2000px at top);
+    }
+    .header__nav ul {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+    }
+    .header__nav__item {
+        flex: 1;
+        margin-bottom: 20vh;
+    }
+    .header__nav a {
+        font-weight: 500;
+        display: block;
+        font-size: 32px;
+        border-radius: 34px;
+        background: rgb(97, 184, 255);
+        color: white;
+        width: 250px;
+        margin: 10vh auto 10vh;
+    }
+    .header__nav ul li:first-child {
+        margin-right: auto;
+    }
+}

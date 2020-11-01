@@ -1,0 +1,93 @@
+/*** variables ***/
+
+:root {
+    --background-color: #fcfcfc;
+}
+
+
+/*** default custom font ***/
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Medium.ttf)
+}
+
+
+/*** default overrides ***/
+
+body {
+    font-family: "Gilroy";
+    font-style: normal;
+    background: var(--background-color);
+}
+
+@media screen and (max-width: 768px) {
+    .paragraph, .title, .hero__text__title {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #73738D;
+}
+
+.paragraph {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 150%;
+    color: #73738D;
+    width: 355px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #222222;
+}
+
+.button {
+    transition: all 1s ease-out;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 2560px) {
+    .title, .hero__text__title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+        width: 100%;
+    }
+    .paragraph {
+        max-width: 720px;
+    }
+    .title {
+        max-width: 720px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container:not(:first-child) {
+        flex-direction: column;
+    }
+}
+
