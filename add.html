@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding page</title>
+
+    <link rel="stylesheet" href="./css/add.css" />
+
+</head>
+
+
+
+<body>
+
+    <header>
+        <div class="title">
+            <h1 class="title-content">
+                Add switchblade
+            </h1>
+        </div>
+        <div class="index-button">
+            <a href="index.html" class="button-link">Go back</a>
+        </div>
+    </header>
+
+    <div class="operations-container">
+        <div class="switchblade-container">
+            <form id="add-form" class="form-switchblade">
+                <div class="form-item">
+                    <label class="form-label">Name</label><br>
+                    <input type="text" class="form-input" id="name-input" />
+                </div>
+                <div class="form-item">
+                    <label class="form-label">Price</label><br>
+                    <input type="number" class="form-input" id="price-input" />
+                </div>
+                <div class="form-item">
+                    <label class="form-label">Country</label><br>
+                    <input type="text" class="form-input desc" id="country-input" />
+                </div>
+                <button id="submit-button" type="submit" class="btn btn-submit">
+            Submit
+          </button>
+            </form>
+        </div>
+    </div>
+    <div id="window_content" class="window-content">
+        <h3 id="window_text_content" class="window-text-content"></h3>
+        <button id="window_button" class="window-button"> OK</button>
+    </div>
+
+
+
+    <script type="module" src="./js/add.js"></script>
+</body>
+
+</html>

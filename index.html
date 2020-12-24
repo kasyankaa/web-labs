@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switchblade</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1 class="title-content">
+                Pharmacy
+            </h1>
+        </div>
+        <div class="add-button">
+            <a href="add.html" class="button-link">Add new</a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="opertaions-container">
+            <div class="find-switchblade">
+                <h3 class="find-title">Find switchblade</h3>
+                <input id="find-input" type="text" class="form-input_find"><br>
+                <button id="find-button" type="button" class="btn find">
+             Find
+                </button>
+                <button id="clear-find-button" type="button" class="btn clear">Clear </button>
+            </div>
+            <div class="count-common-price">
+                <div class="price-container">
+                    <h3 class="price-bottom-row">general price:</h3>
+                    <h3 id="total-price" class="price-bottom-row">$</h3>
+                </div>
+            </div>
+            <div class="sort-switchblades">
+                <button id="sort-button" class="btn sort"> Sort by price</button>
+            </div>
+        </div>
+
+        <ul id="items-container" class="switchblade-items">
+
+        </ul>
+
+        <div id="operations_container" class="operations-container">
+            <div class="switchblade-container">
+                <form id="add-form" class="form-switchblade">
+                    <div class="form-item">
+                        <label class="form-label">Name</label><br>
+                        <input type="text" class="form-input" id="name-input" />
+                    </div>
+                    <div class="form-item">
+                        <label class="form-label">Price</label><br>
+                        <input type="number" class="form-input" id="price-input" />
+                    </div>
+                    <div class="form-item">
+                        <label class="form-label">Country</label><br>
+                        <input type="text" class="form-input desc" id="country-input" />
+                    </div>
+                    <button id="submit-button" type="submit" class="btn btn-submit">
+                Submit
+              </button>
+                </form>
+            </div>
+        </div>
+        <div id="window_content" class="window-content">
+            <h3 id="window_text_content" class="window-text-content"></h3>
+            <button id="window_button" class="window-button"> OK</button>
+        </div>
+
+    </main>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
